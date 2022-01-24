@@ -1,0 +1,127 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar__nav-link {
+  font-weight: 600;
+}
+.sidebar__nav-link:hover {
+  color: white;
+}
+.jobs__heading {
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+.jobs__desc {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.apply-now-button {
+  text-decoration: none;
+  letter-spacing: 0.75px;
+  color: #ff00d6;
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+.jobs__page-heading {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin: 2rem auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .jobs__heading {
+    font-weight: 600 !important;
+    font-size: 2rem !important;
+    text-align: center;
+  }
+  .jobs__desc {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .jobs__page-heading {
+    font-weight: 500;
+    font-size: 1.75rem;
+    margin-top: 6rem;
+  }
+  .apply-now-button {
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #ff00d6;
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  .jobs__hero-img {
+    float: right;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .g-5,
+  .gx-5 {
+    --bs-gutter-x: 0 !important;
+  }
+}
+
+@media only screen and (min-width: 701px) {
+  .apply-now-button {
+    align-self: flex-start;
+  }
+}
+
+.accordion {
+  /* margin-bottom: 20px; */
+  box-shadow: 0 5px 25px 0 rgba(223, 223, 223, 0.089);
+  border-radius: 5px;
+  overflow: hidden;
+  color: #000;
+}
+
+.accordion__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 15px 20px;
+  width: 100%;
+  font: inherit;
+  font-weight: 500;
+  color: #000;
+  text-align: left;
+  border: 0;
+  border-radius: 0;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.accordion__button:after {
+  content: "+";
+  display: block;
+  margin-left: 15px;
+  font: inherit;
+  color: #000;
+}
+
+.accordion__button.is-active:after {
+  content: "−";
+}
+
+.accordion__button:focus {
+  background: #f7f7f7;
+  outline: none;
+}
+
+.accordion__body {
+  /* "max-height" isn't needed, but it's better for the first page draw. */
+  max-height: 0;
+  background: #fff;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
