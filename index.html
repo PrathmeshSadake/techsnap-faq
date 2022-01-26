@@ -1865,7 +1865,7 @@
 
     <!-- FAQ PAGE -->
     <main style="width: 100%">
-      <div class="container" style="padding-top: 8rem">
+      <div class="container" style="padding-top: 6rem">
         <div class="row gx-5">
           <div class="col-sm-6">
             <img
@@ -1899,7 +1899,7 @@
       <!-- FAQ -->
       <div class="container py-5">
         <div class="row">
-          <div class="col-3" style="background-color: #a9a9a9">
+          <div class="col-2" style="background-color: #a9a9a9">
             <div class="row">
               <div
                 class="col-12 px-5 py-3"
@@ -1932,10 +1932,10 @@
             </div>
             <div></div>
           </div>
-          <div class="col-9">
+          <div class="col-10">
             <div style="max-width: 100%">
               <!--Account Accordion -->
-              <div id="account"></div>
+              <div id="account" style="padding-bottom: 20px"></div>
               <div>
                 <h3>Account</h3>
                 <div class="accordion js-accordion" data-id="accordion1">
@@ -2073,7 +2073,7 @@
               </div>
 
               <!--Enrollment Accordion -->
-              <div id="enrollment"></div>
+              <div id="enrollment" style="padding-top: 40px; padding-bottom: 20px"></div>
               <div>
                 <h3>Enrollment</h3>
                 <div class="accordion js-accordion" data-id="accordion1">
@@ -2211,7 +2211,7 @@
               </div>
 
               <!-- Communication Accordion -->
-              <div id="communication"></div>
+              <div id="communication" style="padding-top: 40px; padding-bottom: 20px"></div>
               <div>
                 <h3>Communication</h3>
                 <div class="accordion js-accordion" data-id="accordion1">
@@ -2349,7 +2349,7 @@
               </div>
 
               <!-- Certification Accordion -->
-              <div id="certification"></div>
+              <div id="certification" style="padding-top: 40px; padding-bottom: 20px"></div>
               <div>
                 <h3>Certification</h3>
                 <div class="accordion js-accordion" data-id="accordion1">
@@ -2609,27 +2609,27 @@
     </div>
 
     <script>
-      var coll = document.getElementsByClassName("collapsible");
+      var coll = document.getElementsByClassName('collapsible');
       var i;
 
       for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+        coll[i].addEventListener('click', function () {
+          this.classList.toggle('active');
           var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
+          if (content.style.display === 'block') {
+            content.style.display = 'none';
           } else {
-            content.style.display = "block";
+            content.style.display = 'block';
           }
         });
       }
     </script>
     <script>
-      var dp1 = $(".catalog-dropdown-desk");
-      var dp2 = $(".community-dropdown-desk");
-      var dp3 = $(".resource-dropdown-desk");
-      var dp4 = $(".pricing-dropdown-desk");
-      var dp5 = $(".profile-dropdown-desk");
+      var dp1 = $('.catalog-dropdown-desk');
+      var dp2 = $('.community-dropdown-desk');
+      var dp3 = $('.resource-dropdown-desk');
+      var dp4 = $('.pricing-dropdown-desk');
+      var dp5 = $('.profile-dropdown-desk');
 
       dp1.hide();
       dp2.hide();
@@ -2638,32 +2638,32 @@
       dp5.hide();
     </script>
     <script>
-      var dp1 = $(".catalog-dropdown-desk");
-      var dp2 = $(".community-dropdown-desk");
-      var dp3 = $(".resource-dropdown-desk");
-      var dp4 = $(".pricing-dropdown-desk");
-      var dp5 = $(".profile-dropdown-desk");
+      var dp1 = $('.catalog-dropdown-desk');
+      var dp2 = $('.community-dropdown-desk');
+      var dp3 = $('.resource-dropdown-desk');
+      var dp4 = $('.pricing-dropdown-desk');
+      var dp5 = $('.profile-dropdown-desk');
 
-      var DP1 = $(".1-dropdown");
-      var DP2 = $(".2-dropdown");
-      var DP3 = $(".3-dropdown");
-      var DP4 = $(".4-dropdown");
-      var DP5 = $(".5-dropdown");
+      var DP1 = $('.1-dropdown');
+      var DP2 = $('.2-dropdown');
+      var DP3 = $('.3-dropdown');
+      var DP4 = $('.4-dropdown');
+      var DP5 = $('.5-dropdown');
 
-      $(".catalog-desk").click(function () {
+      $('.catalog-desk').click(function () {
         dp1.toggle();
       });
-      $(".community-desk").click(function () {
+      $('.community-desk').click(function () {
         dp2.toggle();
       });
-      $(".resource-desk").click(function () {
+      $('.resource-desk').click(function () {
         dp3.toggle();
       });
-      $(".pricing-desk").click(function () {
-        console.log(dp4.is(":hidden"));
+      $('.pricing-desk').click(function () {
+        console.log(dp4.is(':hidden'));
         dp4.toggle();
       });
-      $(".profile-avatar").click(function () {
+      $('.profile-avatar').click(function () {
         dp5.toggle();
       });
 
@@ -2687,20 +2687,20 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script>
-      new Splide(".splide", {
-        type: "loop",
+      new Splide('.splide', {
+        type: 'loop',
         autoplay: true,
         pagination: false,
         arrows: false,
         perPage: 2,
         perMove: 1,
-        focus: "center",
+        focus: 'center',
         autoplay: true,
-        gap: "1rem",
+        gap: '1rem',
         breakpoints: {
           600: {
             perPage: 1,
-            gap: "1rem",
+            gap: '1rem',
           },
         },
       }).mount();
